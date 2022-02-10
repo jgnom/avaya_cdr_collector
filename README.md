@@ -2,7 +2,7 @@
 Script and stored procedure on Postgres plpython3u for received cdr detail from tcp socket Avaya Communication Manager 8.
 
 Checked for Ubuntu Server 18.04 LTS PostgreSQL 14.1
-user for work `cdr` with right on db `cdr_collector`
+user for work `postgres` with right on db `cdr_collector`
 
 While lose connection beetwin Avaya Communication Manager and server with script, Avaya CM collect on local disk cdr dump. 
 And post up connection send all dump in tcp socket.
