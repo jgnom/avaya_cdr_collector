@@ -193,4 +193,6 @@ ALTER FUNCTION public.cdr_unformatted_func_py(text[])
 
 ```
 
-
+## For logging create directory in path /var/log/cdr_collector
+`mkdir /var/log/cdr_collector`
+`chown user:user /var/log/cdr_collector`
