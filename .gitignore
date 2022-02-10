@@ -1,0 +1,11 @@
+# Virtual environment folder
+env
+# Compile files
+*.pyc
+# Log files and file configurations
+*.log
+*.ini
+# test scripts
+test_script.py
+test.py
+
