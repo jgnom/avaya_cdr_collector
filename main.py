@@ -22,7 +22,7 @@ serv_sock.listen(10)
 
 def recieve_msg(client_sock):
     while True:
-        len_msg = 70
+        len_msg = 102
         len_msg_socket = len_msg * 9000
         valid_msg = []
         msg = client_sock.recv(len_msg_socket) #.decode("utf-8") # I got the error when I put server.recv
@@ -81,9 +81,9 @@ def start(serv_sock):
 def put_to_db(msg):
     try:
         # Подключение к существующей базе данных
-        connection = psycopg2.connect(user="cdr",
+        connection = psycopg2.connect(user="user",
         # пароль, который указали при установке PostgreSQL
-        password="Zxc1Dsa@",
+        password="password",
         host="127.0.0.1",
         port="5432")
         connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
